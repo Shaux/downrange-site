@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1B1A17">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/downrange-site/icon-192.png">
+<link rel="apple-touch-icon" href="/downrange-site/icon-192.png">
+<script>
+  // Same rule as the app: dark by default, light is the visitor's choice.
+  // Set before first paint so a light-theme visitor never sees a dark flash.
+  (function () {
+    try { if (localStorage.getItem('downrange:site-theme') === 'light') document.documentElement.setAttribute('data-theme', 'light'); } catch (e) {}
+  })();
+</script>
+
+<title>Support · Downrange</title>
+<meta name="description" content="Answers to common questions about Downrange: offline use, Sync, units, accuracy, moving to a new phone, Pro and subscriptions, deleting your data, and how to get in touch.">
+  <script type="module" crossorigin src="/downrange-site/assets/site-DvRxkyaF.js"></script>
+  <link rel="stylesheet" crossorigin href="/downrange-site/assets/site-BEydrbek.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/downrange-site/"><img src="/downrange-site/icon-192.png" alt="" width="30" height="30">DOWNRANGE</a>
+    <nav class="nav" aria-label="Main">
+      <a href="/downrange-site/#how">How it works</a>
+      <a href="/downrange-site/features/" data-nav="features">Features</a>
+      <a href="/downrange-site/pro/" data-nav="pro">Pro</a>
+      <a href="/downrange-site/guide/" data-nav="guide">Guide</a>
+      <a href="/downrange-site/support/" aria-current="page">Support</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--brass-bright)" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+      </button>
+      <a class="btn primary pill hide-xs" href="https://play.google.com/store/apps/details?id=com.downrange.analyzer">Get the app</a>
+      <details class="menu">
+        <summary class="btn outline pill">Menu</summary>
+        <nav class="menu-panel" aria-label="Main">
+          <a href="/downrange-site/#how">How it works</a>
+          <a href="/downrange-site/features/">Features</a>
+          <a href="/downrange-site/pro/">Pro</a>
+          <a href="/downrange-site/guide/">Guide</a>
+          <a href="/downrange-site/support/">Support</a>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
+
+
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <p class="section-label eyebrow">Support</p>
+      <h1>Questions and answers.</h1>
+      <p class="lead">If your question isn't here, write to us. A person reads every email.</p>
+    </div>
+  </div>
+
+  <div class="page-body">
+    <div class="wrap">
+      <div class="faq" style="margin-top:0">
+        <details id="offline"><summary>Does it work without a signal?</summary><p>Yes. Everything works offline, at the range or anywhere else. If you use Sync, it catches up the next time you're online.</p></details>
+        <details id="account"><summary>Do I need an account?</summary><p>No. Everything works without one. You only sign in, with Google or just your email, if you turn on Sync.</p></details>
+        <details id="sync"><summary>What does Sync store, and where?</summary><p>Your groups, loads, rifles and barrels, round log, range sessions, zero resets, saved analyses, target presets and target photos; the dates of your free analysis days, so a reinstall doesn't reset them; and the email address you sign in with. If you sign in by email, we use it only to send you sign-in codes. It's kept in your own account with Supabase, on servers in the EU (Ireland). Sample data is never synced. Sync is free and off until you turn it on, and you can pause it, sign out or delete the cloud copy at any time.</p></details>
+        <details id="crash-reports"><summary>Does the app send crash reports?</summary><p>Only if you turn them on: Settings → Crash reports, off by default. A crash then sends Sentry (EU) the error and where in the app it happened, the app and Android version and the phone model, plus a random install identifier for crashes inside Android itself. Never your groups, photos, loads, account or email. Turn it off and nothing more is sent.</p></details>
+        <details id="units"><summary>Which units can I use?</summary><p>MRAD or MOA for angles; mm, cm or inches for sizes; metres or yards for distance; m/s or fps for velocity. Set the defaults in Settings. Each group remembers its own.</p></details>
+        <details id="accuracy"><summary>The numbers look wrong. What should I check?</summary><p>Usually the scale. Pick two calibration points as far apart as you can and type the real distance between them carefully; every figure is scaled from it. If the photo was taken at an angle, use 4-corner calibration on a rectangle of known size, such as the target's printed border: it corrects the geometry, so the numbers are right even though the photo still looks skewed.</p></details>
+        <details id="detection"><summary>Does it find the holes for me?</summary><p>It can suggest holes, and you confirm each one. On busy or splattered targets, marking by hand is faster and more accurate. Zoom in to separate holes that touch.</p></details>
+        <details id="new-phone"><summary>How do I move my data to a new phone?</summary><p>Turn on Sync on the old phone, then sign in the same way on the new one (the same Google account, or the same email address and the code we send you): your records and target photos follow. Without Sync, export a session file in Settings and import it on the new phone. The file carries your groups, loads, rifles and barrels, round counts, range sessions, zero resets, saved analyses, target presets and tags, but not your target photos, so those need Sync. Importing only adds what the new phone doesn't already have and replaces nothing you've entered.</p></details>
+        <details id="restore"><summary>I subscribed, but Pro isn't showing.</summary><p>Open Settings and tap Restore purchases, signed in to Google Play with the account you bought with. If you use Sync, signing in to the same Sync account also brings Pro with it. Still missing? Write to us with the ID shown in Settings: your Account ID if you're signed in to Sync, otherwise the Support ID.</p></details>
+        <details id="cancel"><summary>How do I cancel a subscription?</summary><p>In the Google Play Store app: Menu → Subscriptions → Downrange. Uninstalling the app doesn't cancel it. Refunds are handled by Google Play.</p></details>
+        <details id="delete"><summary>How do I delete my data?</summary><p>On the phone, Settings → Clear all data deletes everything on it, permanently, and signs you out of Sync. In the cloud, Settings → Sync → Delete cloud account deletes your account and everything synced to it. If you no longer have the app, see <a href="/downrange-site/delete-account/">Delete your account</a>.</p></details>
+        <details id="platforms"><summary>Is there an iPhone or web version?</summary><p>Not yet. Downrange is on Android today. An iPhone version and a web version are both being considered.</p></details>
+      </div>
+
+      <div class="card contact-card" id="contact">
+        <h3>Contact</h3>
+        <p>Email <a href="mailto:support@downrangeprecision.com">support@downrangeprecision.com</a>. For anything about a purchase or Pro access, include the ID from Settings (Account ID or Support ID) so we can find it.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="/downrange-site/"><img src="/downrange-site/icon-192.png" alt="" width="30" height="30">DOWNRANGE</a>
+        <p class="small" style="margin:14px 0 0;max-width:30em">Downrange measures paper. Always work up loads from current published data, and follow your range's safety rules.</p>
+      </div>
+      <div><h4 class="section-label">Product</h4><ul><li><a href="/downrange-site/#how">How it works</a></li><li><a href="/downrange-site/features/">Features</a></li><li><a href="/downrange-site/#load-dev">Load development</a></li><li><a href="/downrange-site/pro/">Pro</a></li><li><a href="/downrange-site/changelog/">What's new</a></li></ul></div>
+      <div><h4 class="section-label">Help</h4><ul><li><a href="/downrange-site/guide/">Guide</a></li><li><a href="/downrange-site/support/">Support</a></li><li><a href="/downrange-site/support/#contact">Contact</a></li><li><a href="/downrange-site/delete-account/">Delete your account</a></li></ul></div>
+      <div><h4 class="section-label">Legal</h4><ul><li><a href="/downrange-site/privacy/">Privacy</a></li><li><a href="/downrange-site/terms/">Terms of use</a></li><li><a href="/downrange-site/terms/#subscription">Subscription terms</a></li><li><a href="/downrange-site/terms/#safety">Safety notice</a></li></ul></div>
+    </div>
+    <div class="footer-base small">
+      <span>© 2026 Michael Shaughnessy · <a href="mailto:support@downrangeprecision.com">support@downrangeprecision.com</a></span>
+      <span>Google Play and the Google Play logo are trademarks of Google LLC.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

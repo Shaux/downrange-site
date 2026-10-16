@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1B1A17">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/downrange-site/icon-192.png">
+<link rel="apple-touch-icon" href="/downrange-site/icon-192.png">
+<script>
+  // Same rule as the app: dark by default, light is the visitor's choice.
+  // Set before first paint so a light-theme visitor never sees a dark flash.
+  (function () {
+    try { if (localStorage.getItem('downrange:site-theme') === 'light') document.documentElement.setAttribute('data-theme', 'light'); } catch (e) {}
+  })();
+</script>
+
+<title>Privacy policy · Downrange</title>
+<meta name="description" content="Downrange keeps your data on your phone by default. Sync and crash reports are optional and off until you turn them on. No ads, no tracking, nothing sold.">
+  <script type="module" crossorigin src="/downrange-site/assets/site-DvRxkyaF.js"></script>
+  <link rel="stylesheet" crossorigin href="/downrange-site/assets/site-BEydrbek.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/downrange-site/"><img src="/downrange-site/icon-192.png" alt="" width="30" height="30">DOWNRANGE</a>
+    <nav class="nav" aria-label="Main">
+      <a href="/downrange-site/#how">How it works</a>
+      <a href="/downrange-site/features/" data-nav="features">Features</a>
+      <a href="/downrange-site/pro/" data-nav="pro">Pro</a>
+      <a href="/downrange-site/guide/" data-nav="guide">Guide</a>
+      <a href="/downrange-site/support/" data-nav="support">Support</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--brass-bright)" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+      </button>
+      <a class="btn primary pill hide-xs" href="https://play.google.com/store/apps/details?id=com.downrange.analyzer">Get the app</a>
+      <details class="menu">
+        <summary class="btn outline pill">Menu</summary>
+        <nav class="menu-panel" aria-label="Main">
+          <a href="/downrange-site/#how">How it works</a>
+          <a href="/downrange-site/features/">Features</a>
+          <a href="/downrange-site/pro/">Pro</a>
+          <a href="/downrange-site/guide/">Guide</a>
+          <a href="/downrange-site/support/">Support</a>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
+
+
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <p class="section-label eyebrow">Privacy policy</p>
+      <h1>Your data<br><span class="accent">stays yours.</span></h1>
+      <div class="chip-row" style="margin-top:22px">
+        <span class="chip static">Effective 14 October 2026</span>
+        <span class="chip static">App version 1.1.0</span>
+        <span class="chip static">com.downrange.analyzer</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-body">
+    <div class="wrap">
+      <!-- The privacy policy of record, linked from Google Play and from the app.
+           Edit it here; the effective date and app version are in site/policy.json. -->
+      <div class="policy">
+      <div class="tldr">
+          <div class="tldr-label">In short</div>
+          <p><strong>Downrange works fully offline, and by default your data stays on your device.</strong> Your photos, shot groups, loads and settings are stored on your phone. There is no advertising, no tracking and nothing is sold.</p>
+          <p><strong>Sync is optional and off until you turn it on</strong>: it keeps a copy in your own account, which you sign in to with Google or with a one-time code sent to your email, so your data follows you across devices. Subscriptions are handled by Google Play and RevenueCat.</p>
+        <p><strong>Crash reports are also optional and off until you turn them on</strong>: they send us the error when the app crashes, never your photos, groups or loads.</p>
+        </div>
+
+        <h2><span class="section-num">1.</span>What Downrange is</h2>
+        <p>Downrange is a target-analysis tool for shooting-sports practice. You photograph or manually mark a shot group, and the app computes group statistics (spread, dispersion, point-of-impact offset and related metrics) on the device. It is a personal record-keeping and analysis tool, intended for adults (see section 10).</p>
+
+        <h2><span class="section-num">2.</span>What stays on your device</h2>
+        <p>Unless you turn on Sync, everything you enter or photograph stays in your device's own storage: target photos, shot coordinates, group statistics, loads, rifles, sessions, notes, velocity readings and settings. Uninstalling the app removes it. A session file you explicitly export or share, and crash reports if you turn them on (section 3), are the only other ways data leaves the app.</p>
+
+        <h2><span class="section-num">3.</span>Sync, and what it sends</h2>
+        <div class="table-wrap">
+        <table>
+          <tr><th>Feature (off by default)</th><th>What is sent</th><th>Who processes it</th><th>Why we may do this (GDPR)</th></tr>
+          <tr><td><strong>Sync</strong>: back up and share your data across your devices</td><td>The email address you sign in with (your Google account's, or the one you receive sign-in codes at), and your groups, loads, rifles and barrels, round log, sessions, zero resets, saved analyses, target presets and target photos, plus the dates of your free analysis days (so reinstalling does not reset them)</td><td>Supabase (data hosted in the EU); Google (Google sign-in); Brevo (sending email sign-in codes, EU)</td><td>Contract: you asked for the service</td></tr>
+          <tr><td><strong>Crash reports</strong>: tell us when the app crashes so we can fix it</td><td>The error and where in the app it happened (its stack trace), the app and Android version and the phone model; for a crash inside Android itself, also a random install identifier that the crash library generates. Never your account, email, photos, groups, loads or any other record, and no log of what you tapped. Like any server, Sentry receives your IP address with the request, but the project is set not to store it.</td><td>Sentry (EU data region)</td><td>Consent: you turn it on in Settings and can turn it off at any time</td></tr>
+        </table>
+        </div>
+        <p>If you sign in with email, we use your address only to send you sign-in codes and to recognise your account; there is no password, no newsletter and no marketing. Sample data that ships with the app is never synced. Pausing Sync or signing out stops sending immediately; changes wait on the device until you resume. Crash reports are off by default and are turned on and off in Settings; turning them off stops anything further being sent. The app does not send usage statistics. If any are ever added, they will be off by default and this policy will describe them before they ship.</p>
+
+        <h2><span class="section-num">4.</span>How long we keep it</h2>
+        <ul>
+          <li><strong>Sync data:</strong> until you delete your cloud account (see section 8), when it is removed from our servers. Records you delete in the app are kept as a small deletion marker (no content) so your other devices remove them too.</li>
+          <li><strong>Crash reports:</strong> kept by Sentry for 30 days, then deleted automatically.</li>
+          <li><strong>Data on your device:</strong> until you delete it, clear the app's data, or uninstall.</li>
+        </ul>
+
+        <h2><span class="section-num">5.</span>Camera, photo library and notification access</h2>
+        <p>Downrange requests camera or photo-library access only when you choose to add a target photo, not on launch. Photos are used to mark shots and derive group statistics and are stored on your device. They are uploaded only if you have turned on Sync. Declining access falls back to the manual grid.</p>
+        <p>Downrange asks for notification permission only when you turn on one of the optional reminders in Settings (a barrel clean reminder, a note when your free analysis days are used, or a weekly nudge to log your session), never on launch. Reminders are scheduled and shown by your phone; nothing about them is sent anywhere. If you decline the permission, the reminders stay off.</p>
+
+        <h2><span class="section-num">6.</span>Subscriptions and purchases</h2>
+        <p>Downrange offers an optional paid tier through Google Play's subscription system. Purchases are handled by <strong>Google Play Billing</strong> and verified using <strong>RevenueCat</strong>. When the app starts it checks your subscription status, so RevenueCat receives an app-specific user identifier and purchase and subscription-status tokens from Google Play, whether or not you have subscribed. If you use Sync, that identifier is your account's, so your subscription follows you across devices. Neither Google Play nor RevenueCat receives your target, group or load data. See <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat's Privacy Policy</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+
+        <h2><span class="section-num">7.</span>No sale, no advertising</h2>
+        <p>We do not sell your personal information, do not share it for cross-context behavioural advertising, and do not use it for advertising or profiling. Because of that, no "Do Not Sell or Share" link is needed under California's CCPA/CPRA or similar US state laws.</p>
+
+        <h2><span class="section-num">8.</span>Your rights and controls</h2>
+        <ul>
+          <li><strong>Access and portability:</strong> Settings &rarr; Export session saves your records (not your target photos) as a JSON file, and Import session loads such a file back, adding what is missing and replacing nothing. If you use Sync, you can also ask us for a copy of what is stored in your account.</li>
+          <li><strong>Delete your cloud account and synced data:</strong> Settings &rarr; Sync &rarr; Delete cloud account. If you cannot open the app, use the <a href="/downrange-site/delete-account/">account deletion page</a>. Data on your device is not affected.</li>
+          <li><strong>Stop syncing:</strong> pause Sync or sign out in Settings at any time.</li>
+          <li><strong>Crash reports:</strong> turn them off in Settings and nothing more is sent. A report holds no account or email, so we usually cannot tell which reports are yours; they are deleted automatically when the retention period ends.</li>
+          <li><strong>Other requests</strong> (correction, objection, a complaint to your data-protection authority): email us at the address below. If you are in the EU or UK you have these rights under the GDPR; California residents have equivalent rights under the CCPA/CPRA.</li>
+        </ul>
+
+        <h2><span class="section-num">9.</span>Service providers</h2>
+        <p>We use these processors under data-processing agreements: <strong>Supabase</strong> (database, storage, authentication; EU region), <strong>RevenueCat</strong> (subscriptions), <strong>Brevo</strong> (delivering one-time sign-in codes by email, EU), <strong>Sentry</strong> (crash reports, only if you turn them on; EU data region) <strong>Cloudflare</strong> (hosting this website and forwarding email sent to us) and <strong>Google</strong> (Play Billing and Google sign-in). Each has its own sub-processors, listed in its own privacy documentation.</p>
+
+        <h2><span class="section-num">10.</span>Children's privacy</h2>
+        <p>Downrange is intended for people aged 18 or over and is not directed at children. We do not knowingly collect information from anyone under 18.</p>
+
+        <h2><span class="section-num">11.</span>Changes to this policy</h2>
+        <p>If this policy changes, the update will be posted at this address with a revised effective date. Any new kind of data collection will be off by default and will need your opt-in.</p>
+
+        <h2><span class="section-num">12.</span>This website</h2>
+        <p>This website sets no cookies, runs no analytics and loads nothing from other companies; even the fonts are served from here. It is hosted by <strong>Cloudflare</strong>, which, like any web host, processes your IP address and browser details to deliver the pages and protect them from attacks. We do not receive or keep visitor logs.</p>
+        <p>Email to support@downrangeprecision.com is forwarded by Cloudflare to our mailbox at Google (Gmail). We use it only to answer you.</p>
+
+        <h2><span class="section-num">13.</span>Contact</h2>
+        <p>Questions about this policy or the app can be directed to:</p>
+        <div class="contact-card">
+          <div class="row"><span class="k">Developer</span><span>Michael Shaughnessy</span></div>
+          <div class="row"><span class="k">Email</span><span><a href="mailto:support@downrangeprecision.com">support@downrangeprecision.com</a></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="/downrange-site/"><img src="/downrange-site/icon-192.png" alt="" width="30" height="30">DOWNRANGE</a>
+        <p class="small" style="margin:14px 0 0;max-width:30em">Downrange measures paper. Always work up loads from current published data, and follow your range's safety rules.</p>
+      </div>
+      <div><h4 class="section-label">Product</h4><ul><li><a href="/downrange-site/#how">How it works</a></li><li><a href="/downrange-site/features/">Features</a></li><li><a href="/downrange-site/#load-dev">Load development</a></li><li><a href="/downrange-site/pro/">Pro</a></li><li><a href="/downrange-site/changelog/">What's new</a></li></ul></div>
+      <div><h4 class="section-label">Help</h4><ul><li><a href="/downrange-site/guide/">Guide</a></li><li><a href="/downrange-site/support/">Support</a></li><li><a href="/downrange-site/support/#contact">Contact</a></li><li><a href="/downrange-site/delete-account/">Delete your account</a></li></ul></div>
+      <div><h4 class="section-label">Legal</h4><ul><li><a href="/downrange-site/privacy/">Privacy</a></li><li><a href="/downrange-site/terms/">Terms of use</a></li><li><a href="/downrange-site/terms/#subscription">Subscription terms</a></li><li><a href="/downrange-site/terms/#safety">Safety notice</a></li></ul></div>
+    </div>
+    <div class="footer-base small">
+      <span>© 2026 Michael Shaughnessy · <a href="mailto:support@downrangeprecision.com">support@downrangeprecision.com</a></span>
+      <span>Google Play and the Google Play logo are trademarks of Google LLC.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

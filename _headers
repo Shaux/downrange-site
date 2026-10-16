@@ -1,0 +1,22 @@
+# Response headers for the website on Cloudflare Pages (docs/website-plan.md).
+# Vite copies this file to dist-site/ untouched. GitHub Pages, which hosts the
+# test copy, ignores it.
+#
+# The script-src hash is the inline theme script in site/partials/head.html.
+# Change that script and the hash must change with it, or browsers block it:
+# tests/site-headers.test.ts fails until they agree. Inline style attributes
+# are used throughout the pages, hence 'unsafe-inline' for styles only.
+
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-RKPBe/y2k0KvMlaeZcurJo9HIhN/LR6aK8hSTGIPN6I='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
+  Strict-Transport-Security: max-age=31536000
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: no-referrer
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()
+  Cross-Origin-Opener-Policy: same-origin
+
+# Vite puts a content hash in every file name here, so a changed file is a new
+# URL and these can be cached for good. HTML keeps Pages' default revalidation.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
