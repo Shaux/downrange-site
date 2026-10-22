@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1B1A17">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/downrange-site/icon-192.png">
+<link rel="apple-touch-icon" href="/downrange-site/icon-192.png">
+<script>
+  // Same rule as the app: dark by default, light is the visitor's choice.
+  // Set before first paint so a light-theme visitor never sees a dark flash.
+  (function () {
+    try { if (localStorage.getItem('downrange:site-theme') === 'light') document.documentElement.setAttribute('data-theme', 'light'); } catch (e) {}
+  })();
+</script>
+
+<title>Guide · Downrange</title>
+<meta name="description" content="How to calibrate, mark shots, set up rifles and loads, and read trend, zero, compare and the Window tab in Downrange.">
+  <script type="module" crossorigin src="/downrange-site/assets/site-7RVmaU8L.js"></script>
+  <link rel="stylesheet" crossorigin href="/downrange-site/assets/site-DZgEgzme.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/downrange-site/"><img src="/downrange-site/icon-192.png" alt="" width="30" height="30">DOWNRANGE</a>
+    <nav class="nav" aria-label="Main">
+      <a href="/downrange-site/#how">How it works</a>
+      <a href="/downrange-site/features/" data-nav="features">Features</a>
+      <a href="/downrange-site/pro/" data-nav="pro">Pro</a>
+      <a href="/downrange-site/guide/" aria-current="page">Guide</a>
+      <a href="/downrange-site/support/" data-nav="support">Support</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--brass-bright)" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+      </button>
+      <a class="btn primary pill hide-xs" href="https://play.google.com/store/apps/details?id=com.downrange.analyzer">Get the app</a>
+      <details class="menu">
+        <summary class="btn outline pill">Menu</summary>
+        <nav class="menu-panel" aria-label="Main">
+          <a href="/downrange-site/#how">How it works</a>
+          <a href="/downrange-site/features/">Features</a>
+          <a href="/downrange-site/pro/">Pro</a>
+          <a href="/downrange-site/guide/">Guide</a>
+          <a href="/downrange-site/support/">Support</a>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
+
+
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <p class="section-label eyebrow">Guide</p>
+      <h1>Using Downrange.</h1>
+      <p class="lead">The same guide that is inside the app, under Settings → Guide. Start with the quick start; open any topic below for the detail.</p>
+    </div>
+  </div>
+
+  <div class="page-body">
+    <div class="wrap with-toc">
+      <div class="prose">
+        <h2 id="quick-start">Quick start</h2><ol class="quick-start"><li>Take a picture or pick one from your camera roll</li><li>Tap two points and set the real distance to calibrate scale</li><li>Mark your aim point (optional, needed for windage/elevation)</li><li>Tap to mark every shot hole</li><li>Pick the load profile this group belongs to — charge, seating and caliber prefill from it, but you can override any of them for a load-dev test</li><li>Tag the session and save — add velocity and conditions any time from Group Details</li></ol>
+    <h2 id="reference">Reference</h2><div class="faq">
+    <details id="scale"><summary>Scale & calibration</summary><p>Tap two points a known distance apart, type the real distance, and Downrange derives millimeters-per-photo-unit from it. Every other metric is scaled off this number, so if you move a calibration point, the scale clears and you have to set it again. For a photo taken at an angle, switch to 4-CORNER instead of 2-POINT: tap the four corners of a rectangle you know the real size of (a target's printed border, a sheet of paper) in any order — they're sorted automatically — and Downrange corrects the geometry itself rather than measuring off a skewed photo. The photo still looks skewed on screen; only the numbers are corrected.</p></details>
+    <details id="marking"><summary>Marking shots</summary><p>Tap to add a hole — even right next to one already marked, since a good group often looks like that. Press and hold a shot to select it, then REMOVE; a tap never deletes, so it can't be mistaken for placing one. Drag any selected marker to nudge it. Pinch or the +/- buttons zoom in for a precise placement; drag the photo to pan. Marking with gloves on: turn on Glove mode in Settings for a larger grab radius around each marker and an on-screen nudge pad for fine adjustment without a precise drag. A photo can hold more than one group — save the first, then use + Mark another group on this photo from its Details screen to start a second group on the same picture, with the same calibration carried over.</p></details>
+    <details id="coldbore"><summary>Cold bore</summary><p>Switch to COLD BORE mode and tap to mark it, or mark it as an ordinary shot first and press SELECTED IS COLD BORE afterwards — whichever order you find out in. It's reported separately (distance from your aim point and from the group center) and left out of every group statistic; a previous cold bore put back with COLD BORE → SHOT rejoins the group rather than vanishing.</p></details>
+    <details id="rifles"><summary>Rifles & barrels</summary><p>A rifle owns one or more barrels over its life, and Rifles tracks round counts for each: on the action overall, on the current barrel, and since its last clean. Logging rounds (Rifles → a rifle → Log rounds) is deliberate and separate from saved groups — you don't measure every group you shoot, so groups alone always undercount actual rounds fired. A clean appends a new count-from point rather than resetting the barrel's whole life, so "since clean" and "on this barrel" stay independently correct. Swapping barrels doesn't lose history: add the new one on Rifles → a rifle, and every group already marked stays linked to whichever barrel it was actually shot on, which is what lets Zero (below) filter to one specific barrel rather than pooling a barrel change into one number.</p></details>
+    <details id="profiles"><summary>Load profiles</summary><p>Every group links to a load profile — the wizard asks you to pick one before it lets you save, defaulting to your active one. A profile carries charge, seating depth and caliber, and picking it prefills all three, but they stay editable per group: a load-dev ladder deliberately tests a different charge or seating off the same profile. Trend and Window use whichever value is set on the group itself, falling back to the profile's only if you never touched it. Running a ladder against a real load pulls those rungs into that load's own Zero and Trend history, which is rarely what you want — start a load-dev profile instead (Loads → + New load-dev profile). It carries the rifle and caliber over so rungs have somewhere to hang, stays out of Zero entirely and out of Trend until you activate it there, and once you've picked a keeper charge, Promote turns it into a normal load. A profile's own edit screen also shows pooled precision across every group linked to it — the same re-basing Composite uses below, kept live rather than something you build by hand.</p></details>
+    <details id="caliber"><summary>Caliber & edge-to-edge</summary><p>Pick a caliber (or enter a custom bullet diameter) on a profile or a group to see edge-to-edge spread — center-to-center plus one bullet diameter — alongside the raw center-to-center number.</p></details>
+    <details id="velocity"><summary>Velocity & flier triage</summary><p>Paste a whole string of chronograph readings at once, or turn on PAIR READINGS TO SHOTS to enter one per shot in the order you marked them — entirely optional, and a blank row just gets skipped by every pooled figure. Readings don't have to be typed by hand either — Import CSV on Group Details reads a chronograph's own exported file (LabRadar, MagnetoSpeed, or a generic column-header format) and fills the field for you. Pairing unlocks two things on Group Detail: a chart of each shot's vertical position against its own velocity reading, and how much of the group's vertical spread the velocity actually explains as one number (with what's left once it's accounted for) — plus, when one shot clearly opened the group up, whether that shot's reading was also an outlier. A wide shot at a normal velocity points at the rifle, the hold, or a called flier; a wide shot that also left the barrel unusually fast or slow is very likely the round itself. Needs 5 or more paired readings before either says anything, so a real pattern isn't drawn from noise.</p></details>
+    <details id="sessions"><summary>Range sessions</summary><p>A session groups everything shot in one range visit under one shared set of conditions — temperature, humidity, pressure, wind — so you enter them once instead of on every group. Start one from the wizard's Session picker (or Settings → Sessions), and every group you save into it inherits its conditions unless you override them on that group specifically. The Pressure field on a session (or a group with no session) has a DEVICE button that reads your phone's barometer directly, on phones that have one.</p></details>
+    <details id="composite"><summary>Composite groups</summary><p>Combining groups re-bases every source group's shots around a shared point of aim (if every source has one marked) so they land in one shared coordinate space for a pooled estimate. Group Detail keeps each source in its own color and shape, with a ring at its own average point of impact and a crosshair at the average across all of them — so you can see whether one test is dragging the pooled result, not just the pooled shape. COMPOSITE builds one and keeps it; FIND WINDOW (below) builds the same pooling to answer one question and keeps nothing.</p></details>
+    <details id="trend"><summary>Trend charts</summary><p>Group size over time (mean radius, extreme spread or dispersion against save order, for all loads or one) is free for everyone, for good. Everything else here is part of Pro after your free days. Plot mean radius, extreme spread, dispersion, velocity (average or SD), or cold-bore distance from your point of aim across your saved groups. "Against" isn't just charge, seating or save order — temperature and pressure are there too, for spotting a load that's sensitive to conditions, and so are rounds on the barrel and rounds since its last clean, for watching accuracy fall off as a barrel wears. Rifle and barrel dropdowns sit at the top of the tab, narrowing everything below before any other filter does — they only appear once you actually have more than one, and picking a rifle narrows the barrel list to its own. Load, tag and range stay behind the FILTER button underneath. Switch on the velocity box plot to see each group's full spread (min, Q1, median, Q3, max) instead of one summary point, which shows up an inconsistent charge before it shows as a wide extreme spread.</p></details>
+    <details id="ladder"><summary>The Window tab</summary><p>Select 2 or more marked groups from a charge or seating ladder in the Groups library and tap Find window. No particular tag is needed — what matters is the charge or seating actually used on each one. It asks which variable you were actually testing — charge or seating — since a window only means something as a run of sequential steps in one of them. Groups shot at the same value are pooled into one rung. It then lists the best run of each length (3 steps, 4, and so on): by default the run whose point of impact, measured from your point of aim, stays most consistent vertically, then horizontally, then the tightest groups, where a difference smaller than the groups' own typical size counts as the same. The Vertical, Horizontal and Group size chips rank by one of those alone. Tap a run to mark it on the chart of how every load actually shot (group size and velocity against that variable). A load sitting mid-run is less sensitive to small variation. Every group needs a point of aim for this; any that can't be used are named. Find window saves nothing; use Composite when you want the pooled group kept.</p></details>
+    <details id="compare"><summary>Compare groups</summary><p>Select 2 or more groups from the Groups library and tap Compare. Basic mode keeps it to the essentials; Advanced adds edge-to-edge, width/height, calculated CEP, windage/elevation, a zoomed-to-fit target picture for each group, and — when the selection spans more than one rifle — which rifle each group came from. BEST and WORST follow Settings › Default units › Rank groups by (mean radius unless you pick extreme spread), the same ranking as the Groups library and Window; groups without a scale or with fewer than 2 shots are listed but not ranked. With exactly two groups selected, Compare also runs a bootstrap significance test on their dispersion — not just which one measured tighter, but whether the difference is bigger than sampling noise from that many shots would produce on its own, with a plain verdict rather than a bare p-value. The mm/cm/in switcher in Compare only changes this view; it never touches your default unit in Settings.</p></details>
+    <details id="zero"><summary>Zero check</summary><p>Pools windage and elevation across every eligible group shot since your last zero reset, net of any scope correction you've already dialed in. Filter to one barrel and one load before trusting the verdict — zero belongs to that pairing, and pooling across a barrel change or two different charges answers a question that was never asked.</p></details>
+    <details id="detail"><summary>Confidence & hit probability</summary><p>Every dispersion figure on Group Detail (max center-to-center, mean radius, dispersion) carries a 95% confidence interval underneath it once you have 5+ shots — a bootstrap resample of your own shots, not a formula assuming a distribution — so "9.5mm" reads as "9.5mm, could reasonably be 6.7–13.1" rather than a false level of precision. Below that, Hit probability and R50/R90/R95 answer a different question: given this group's spread, what fraction of shots would land inside a target of a size you choose. If a group has a called flier, the toggle above the stats table recomputes every number with and without it — the flagged shot always stays visible on the photo either way, only the numbers switch, and which view you're seeing is always labeled.</p></details>
+    <details id="organize"><summary>Archiving & deleting groups</summary><p>Archive (from a group's own Details, or multi-select in the library) hides a group from the main list without touching any stat it feeds — reversible any time from Groups → Archived. Delete is the one that actually removes it, staged behind a several-second Undo banner: the group leaves the screen immediately, but nothing is actually erased from storage until that window closes, so backing out of a delete — or closing the app mid-window — loses nothing.</p></details>
+    <details id="export"><summary>Export & import</summary><p>Session export saves your records into one JSON file: groups (with their load, charge and seating), loads, rifles and barrels, the round log, sessions, zero resets, saved analyses, target presets and tags. Target photos are not included. Importing adds every record from a file that isn't already here, matched by id, so your groups arrive with the rifles, barrels and sessions they belong to; nothing you have entered is replaced, and importing the same file twice changes nothing. The summary CSV carries the same per-group load data as its own columns; a separate Points CSV exports one row per shot in real millimeters instead, for analysis outside the app. A single group's own Export PNG (on its Details screen) draws that target — your photo, or the blank grid — with its markers, rings and statistics, and opens the share sheet so you can save or send the image.</p></details>
+    <details id="reminders"><summary>Reminders</summary><p>Settings → Reminders has three switches, all off until you turn them on. Barrel clean due: a notification the next morning once your fitted barrel passes the round count you set since its last clean, once per clean. Free days used: one notification the evening you use your third free day of analysis. Log your session: a weekly nudge on the day and hour you pick. They are notifications on your phone only; nothing is sent anywhere. Android asks for permission when you turn the first one on, and if you decline they stay off. Reminders may arrive a little after the set time, since Android batches background alarms.</p></details></div>
+      </div>
+      <nav class="toc" aria-label="Guide topics">
+        <span class="section-label" style="margin:0 0 4px">Topics</span>
+        <a href="#scale">Scale & calibration</a><a href="#marking">Marking shots</a><a href="#coldbore">Cold bore</a><a href="#rifles">Rifles & barrels</a><a href="#profiles">Load profiles</a><a href="#caliber">Caliber & edge-to-edge</a><a href="#velocity">Velocity & flier triage</a><a href="#sessions">Range sessions</a><a href="#composite">Composite groups</a><a href="#trend">Trend charts</a><a href="#ladder">The Window tab</a><a href="#compare">Compare groups</a><a href="#zero">Zero check</a><a href="#detail">Confidence & hit probability</a><a href="#organize">Archiving & deleting groups</a><a href="#export">Export & import</a><a href="#reminders">Reminders</a>
+      </nav>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="/downrange-site/"><img src="/downrange-site/icon-192.png" alt="" width="30" height="30">DOWNRANGE</a>
+        <p class="small" style="margin:14px 0 0;max-width:30em">Downrange measures paper. Always work up loads from current published data, and follow your range's safety rules.</p>
+      </div>
+      <div><h4 class="section-label">Product</h4><ul><li><a href="/downrange-site/#how">How it works</a></li><li><a href="/downrange-site/features/">Features</a></li><li><a href="/downrange-site/#load-dev">Load development</a></li><li><a href="/downrange-site/pro/">Pro</a></li><li><a href="/downrange-site/changelog/">What's new</a></li></ul></div>
+      <div><h4 class="section-label">Help</h4><ul><li><a href="/downrange-site/guide/">Guide</a></li><li><a href="/downrange-site/support/">Support</a></li><li><a href="/downrange-site/support/#contact">Contact</a></li><li><a href="/downrange-site/delete-account/">Delete your account</a></li></ul></div>
+      <div><h4 class="section-label">Legal</h4><ul><li><a href="/downrange-site/privacy/">Privacy</a></li><li><a href="/downrange-site/terms/">Terms of use</a></li><li><a href="/downrange-site/terms/#subscription">Subscription terms</a></li><li><a href="/downrange-site/terms/#safety">Safety notice</a></li></ul></div>
+    </div>
+    <div class="footer-base small">
+      <span>© 2026 Michael Shaughnessy · <a href="mailto:support@downrangeprecision.com">support@downrangeprecision.com</a></span>
+      <span>Google Play and the Google Play logo are trademarks of Google LLC.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
